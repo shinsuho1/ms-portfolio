@@ -1,0 +1,205 @@
+.news{
+    width: 1180px;
+    padding: 100px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    margin-top: 100px;
+    transition: 1.5s;
+    h1{
+        font: bold 50px/1 "arial";
+        color: #000;
+        margin-bottom: 20px;
+        margin-top: 80px;
+        transition: 0.5s;
+        position: absolute;
+        opacity: 0;
+        top: 100px;
+        span{
+            font: normal 20px/1 "맑은 고딕";
+            color: #aaa;
+            &::before{
+                content: "/";
+                margin: 0 20px 0 10px;
+            }
+        }
+    }
+    .tab{
+        width: 350px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .content{
+            width: 370px;
+            height: 80px;
+            color: #ddd;
+            cursor: pointer;
+            >p.txt{
+                font-size: 14px;
+                margin-bottom: 15px;
+                span{
+                    margin: 0px 10px 0px 10px;
+                }
+                a{
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-decoration: underline;
+                    color: #ddd;
+                }
+            }
+            >h3{
+                font-size: 18px;
+                color: #ddd;
+            }
+
+            &:hover{
+                >.txt{
+                    text-decoration: underline  ;
+                }
+            }
+
+            &.on{
+                color: #2f2f2f;
+                >p.txt{
+                    color: #2f2f2f;
+                    a{
+                        color: #0067bb;
+                    }
+                }
+                >h3{
+                    color: #2f2f2f;;
+                }
+
+            }
+        }
+    }
+    .inner{
+        width: 800px;
+        height: 1000px;
+        position: relative;
+        
+        article{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            opacity: 0;
+            transition: 0.5s;
+            h2{
+                font: bold 30px/1.1 "arial";
+            }
+            >.txt{
+                margin: 5px 0px 50px 0px;
+                font-size: 14px;
+                span{
+                    margin: 0px 10px 0px 10px;
+                }
+                a{
+                    font-size: 14px;
+                    text-decoration: underline;
+                    color: #2f2f2f;
+                }
+            }
+            .pic{
+                width: 100%;
+                height: 430px;
+                margin-bottom: 30px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            >p{
+                font-size: 18px;
+            }
+            .one{
+                margin-bottom: 20px;
+            }
+    
+            >span{
+                position: absolute;
+                bottom: 0;
+                right: 10px;
+            }
+            &.on{
+                opacity: 1;
+                top: 0px;
+            }
+        }
+    }
+
+    &.on{
+        h1{
+            opacity: 1;
+            top: 40px;
+        }
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 539px){
+    .news{
+        width: 100%;
+        height: 100%;
+        padding: 3vh 0 5vh 0;
+        h1{
+            margin-left: 20px;
+            font-size: 30px;
+        }
+        .tab{
+            display: none;
+        }
+        .inner{
+            width: 100%;
+            height: 100%;
+            margin-top: 50px;
+            &::before{
+                content: '';
+                display: block;
+                clear: both;
+            }
+            article{
+                height: 100%;
+                position: relative;
+                opacity: 1;
+                display: block;
+                margin-bottom: 20px;
+                padding: 20px;
+                
+                h2{
+                    font: bold 4vw/1.1 "arial";
+                    &::before{
+                        width: 100%;
+                        content: '';
+                        display: block;
+                        height: 1px;
+                        background-color: #bebebe;
+                        margin-bottom: 30px;
+                    }
+                }
+                >.txt{
+                    margin-bottom: 10px;
+                }
+                .pic{
+                    height: 30%;
+                    img{
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+                >p{
+                    font-size: 3.5vw;
+                }
+
+                &:last-child{
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}
