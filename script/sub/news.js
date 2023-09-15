@@ -17,6 +17,6 @@ contents.forEach((el,index)=>{
         contents[index].classList.add("on");
         articles[index].classList.add("on");
 
-        window.scrollTo({ left: 0, top: 0});
+        window.scrollTo({ left: 0, top: 0, behavior:"smooth"});
     });
 });

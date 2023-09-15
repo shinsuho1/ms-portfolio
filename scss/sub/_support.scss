@@ -98,7 +98,6 @@
                             }
                             &:nth-of-type(3){
                                 width: 745px;
-                                padding-right: 10px;
                             }
                             &:nth-of-type(4){
                                 width: 130px;
@@ -233,7 +232,7 @@
 
 @media screen and (max-width:539px){
     .support{
-        height: 130vh;
+        height: 120vh;
         .inner{
             width: 100%;
             .menu{
@@ -259,15 +258,18 @@
             }
             article{
                 width: 100%;
+                
                 >.title{
-                    justify-content: center;
+                    justify-content: left;
                     h3{
                         font-size: 30px;
+                        margin-left: 10px;
                     }
                 }
             }
             .FAQ , .QNA{
                 table{
+                    font-size: 3.5vw;
                     thead{
                         tr{
                             th{
@@ -277,6 +279,7 @@
                                 }
                                 &:nth-of-type(2){
                                     width: 220px;
+                                    display: none;
                                 }
                                 &:nth-of-type(3){
                                     width: 745px;
@@ -293,11 +296,11 @@
                         tr{
                             td{
                                 &:nth-of-type(1){
-                                    width: 75px;
                                     display: none;
                                 }
                                 &:nth-of-type(2){
                                     width: 220px;
+                                    display: none;
                                 }
                                 &:nth-of-type(3){
                                     width: 755px;
@@ -321,10 +324,8 @@
             .QNA{
                 .title{
                     .icon{
-                        height: 40px;
-                        position: absolute;
-                        right: 0;
-                        top: 40px;
+                        top: 20px;
+                        right: 10px;
                         i{
                             font-size: 20px;
                             cursor: pointer;
@@ -335,6 +336,7 @@
     
             .Announcement{
                 table{
+                    font-size: 3.5vw;
                     thead{
                         tr{
                             th{
