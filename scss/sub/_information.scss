@@ -136,26 +136,26 @@
         opacity: 1;
         z-index: 2;
         display: flex;
+        flex-direction: column;
         transition: 1s;
         background-color: #333;
 
         figure{
             display: flex;
-            width: 60vw;
-            height: 100%;
+            width: 100%;
+            height: 400px;
+            padding: 30px;
             align-items: center;
-            margin-left: 20px;
             img{
                 width: 100%;
-                height: 70%;
-                object-fit: cover;
+                height: 100%;
+                object-fit: contain;
             }
         }
 
         .txt{
-            position: relative;
-            width: 40%;
-            height: 100%;
+            width: 100%;
+            padding: 30px;
 
             h1{
                 font: normal 4vw/1 "Rubik";
@@ -165,18 +165,18 @@
                 margin-bottom: 50px;
             }
             p{
-                font: 1.1vw/1.3 "arial";
+                font: 1.5vw/1.3 "arial";
                 color: #666;
-                margin-bottom: 50px;
-                margin-left: 30px;
+                text-align: center;
             }
             >span{
                 font-size: 24px;
                 position: absolute;
                 cursor: pointer;
-                color: orange;
-                bottom: 5vw;
-                right: 50px;
+                color: #fff;
+                top: 10px;
+                right: 20px;
+                transform: rotate(45deg);
             }
         }
         &.on{
@@ -195,35 +195,30 @@
         z-index: 2;
         transition: 1s;
         background-color: #333;
-        border-radius: 15px;
         figure{
-            width: 60%;
+            width: 100%;
             height: 100%;
-            margin-left: 50px;
+            padding: 30px;
             #map{
-                width: 80%;
-                height: 60vh;
+                width: 100%;
+                height: 500px;
             }
         }
         .btns{
-            float: left;
-            margin-left: 20px;
-            position: absolute;
-            bottom: 3vh;
-            left: 8vw;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
             li{
-                float: left;
-                margin-right: 20px;
+                width: 100%;
                 a{
                     display: block;
-                    width: 200px;
+                    width: 100%;
                     height: 40px;
                     background-color: #fff;
                     font: bold 12px/40px "맑은 고딕";
                     color: #555;
                     text-align: center;
                     border: 1px solid #555;
-                    border-radius: 5px;
                     font-size: 14px;
                 }
                 &.on{
@@ -235,15 +230,14 @@
             }
         }
         .txt1{
-            width: 30%;
+            width: 100%;
             height: 50%;
+            padding: 30px;
             position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            h1{
+            text-align: center;
+            h1.office{
                 width: 100%;
-                font-size: 2vw;
-                display: flex;
+                font-size: 3vw;
                 color: #fff;
                 text-align: center;
                 flex-wrap: nowrap;
@@ -261,13 +255,14 @@
             p{
                 color: #ddd;
             }
-            >span{
+            .location_close{
                 font-size: 24px;
                 position: absolute;
+                top: 10px;
+                right: 20px;
                 cursor: pointer;
-                color: orange;
-                bottom: 5vw;
-                right: 50px;
+                color: #fff;
+                transform: rotate(45deg);
             }
         }
         &.on{
@@ -285,13 +280,7 @@
         }
     }
 }
-@media screen and (max-width: 1179px){
-    .information{
-        nav{
-            display: none;
-        }
-    }
-}
+
 
 
 @media screen and (max-width: 539px){
@@ -356,11 +345,73 @@
             }
         }
         aside{
-            display: none;
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+    
+            figure{
+                display: flex;
+                width: 100%;
+                margin-left: 0;
+                padding: 20px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+    
+            .txt{
+                position: relative;
+                width: 100%;
+                height: 100%;
+    
+                h1{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    font: normal 8vw/1 "Rubik";
+                }
+                p{
+                    font: 4vw/1.3 "arial";
+                    margin-left: 0;
+                    padding: 20px;
+                    margin-bottom: 0;
+                }
+                >span{
+                    font-size: 20px;
+                    top: 10px;
+                    right: 10px;
+                }
+            }
         }
         .location{
-            display: none;
-            
+            width: 100%;
+            height: 60vh;
+            figure{
+                width: 100%;
+                height: 100%;
+                padding: 30px;
+                #map{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .txt1{
+                h1.office{
+                    font-size: 8vw;
+                }
+                >.title{
+                    font: normal 4vw/1 "맑은 고딕";
+                }
+                p{
+                    color: #ddd;
+                }
+            }
+            &.on{
+                left: 50%;
+            }
         }
     }
 }
