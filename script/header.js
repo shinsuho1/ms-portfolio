@@ -24,7 +24,7 @@ window.addEventListener("load",()=>{
         window.addEventListener("touchmove",(e)=>{
             const touchX = e.touches[0].clientX;
             if(startX <= 30){
-                if(touchX < 200){
+                if(touchX > startX){
                     menuMo.classList.add("on");
                 }
             }
