@@ -15,3 +15,20 @@ btnCall.addEventListener("click",(e)=>{
 menuMo_close.addEventListener("click",()=>{
     menuMo.classList.remove("on");
 });
+
+window.addEventListener("load",()=>{
+    if(window.innerWidth <= 539){
+        window.addEventListener("touchstart",(e)=>{
+            startX = e.touches[0].clientX;
+            console.log(startX);
+        });
+        window.addEventListener("touchmove",(e)=>{
+            const touchX = e.touches[0].clientX;
+            if(startX <= 30){
+                if(touchX < 200){
+                    menuMo.classList.add("on");
+                }
+            }
+        });
+    }
+});

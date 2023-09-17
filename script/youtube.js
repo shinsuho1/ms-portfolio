@@ -6,7 +6,7 @@ let playListId = "PLboMi2lmGKuA7r6tYKYAh-yUxn1OBNty3";
 let count = "1";
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playListId}&maxResults=${count}`;
 
-const openBtn = document.querySelector(".main>.title>.btn");
+const openBtn = document.querySelector(".youtubeBtn");
 
 openBtn.addEventListener("click",(e)=>{
     e.preventDefault();
@@ -21,6 +21,7 @@ openBtn.addEventListener("click",(e)=>{
         vidList.append(pop);
     
 });
+
 vidList.addEventListener("click",(e)=>{
     const pop = vidList.querySelector(".pop");
     if(pop){
