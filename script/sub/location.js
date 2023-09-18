@@ -32,7 +32,7 @@ for(let i = 0; i < markerOptions.length ; i++){
         map: map, 
         position: markerOptions[i].latlng,
         title: markerOptions[i].title,
-        image: new kakao.maps.MarkerImage("./img/sub/information/Microsoft.png",new kakao.maps.Size(232 , 99), {offset: new kakao.maps.Point(116,64)})
+        image: new kakao.maps.MarkerImage("./img/sub/information/Microsoft.png",new kakao.maps.Size(192 , 59), {offset: new kakao.maps.Point(116,64)})
     });
 
     markerOptions[i].button.addEventListener("click",(e)=>{
