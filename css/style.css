@@ -22,7 +22,8 @@ a {
 }
 
 body {
-  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
 }
 
 header {
@@ -1503,13 +1504,14 @@ footer .inner p {
   }
   .information aside {
     width: 100%;
-    height: 60vh;
+    height: 50%;
     display: flex;
     flex-direction: column;
   }
   .information aside figure {
     display: flex;
     width: 100%;
+    height: 100%;
     margin-left: 0;
     padding: 20px;
   }
@@ -1529,7 +1531,7 @@ footer .inner p {
     font: normal 8vw/1 "Rubik";
   }
   .information aside .txt p {
-    font: 4vw/1.3 "arial";
+    font: 3.5vw/1.3 "arial";
     margin-left: 0;
     padding: 20px;
     margin-bottom: 0;
@@ -2058,18 +2060,17 @@ footer .inner p {
 }
 .support {
   width: 100%;
-  height: 100vh;
   padding: 100px 0;
   display: flex;
   flex-direction: column;
-  opacity: 0;
+  opacity: 1;
   margin-top: 80px;
   transition: 1s;
 }
 .support .inner {
-  width: 1180px;
-  height: 100%;
+  width: 980px;
   margin: 0 auto;
+  position: relative;
 }
 .support .inner .menu {
   width: 100%;
@@ -2091,305 +2092,49 @@ footer .inner p {
   color: #fff;
 }
 .support .inner article {
-  width: 1180px;
-  height: 600px;
-  display: none;
-  opacity: 0;
-  position: absolute;
-}
-.support .inner article > .title {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-.support .inner article > .title h3 {
-  font: bold 40px "arial";
-  margin-bottom: 20px;
-}
-.support .inner article > .title h3 span {
-  font: normal 20px/1 "맑은 고딕";
-  color: #aaa;
-}
-.support .inner article > .title h3 span::before {
-  content: "/";
-  margin: 0 20px 0 10px;
-}
-.support .inner article table {
   width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #eee;
+}
+.support .inner article .title {
+  height: 100%;
+  position: relative;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: space-between;
 }
-.support .inner article table thead {
-  border-bottom: 1px solid gray;
-  border-top: 2px solid #333;
+.support .inner article .title h2 {
+  font: bold 20px/1 "Montserrat";
 }
-.support .inner article table thead tr th {
-  padding: 15px 0;
+.support .inner article .title p {
+  display: flex;
+  justify-content: space-between;
+  font: 12px/1 "Montserrat";
 }
-.support .inner article table tbody {
-  justify-content: left;
-  border-bottom: 1px solid gray;
-}
-.support .inner article table tbody tr td {
-  padding: 15px 0;
-}
-.support .inner article.on {
-  display: block;
-  opacity: 1;
-}
-.support .inner .FAQ table thead tr th:nth-of-type(1), .support .inner .QNA table thead tr th:nth-of-type(1) {
-  width: 75px;
-}
-.support .inner .FAQ table thead tr th:nth-of-type(2), .support .inner .QNA table thead tr th:nth-of-type(2) {
-  width: 220px;
-}
-.support .inner .FAQ table thead tr th:nth-of-type(3), .support .inner .QNA table thead tr th:nth-of-type(3) {
-  width: 745px;
-}
-.support .inner .FAQ table thead tr th:nth-of-type(4), .support .inner .QNA table thead tr th:nth-of-type(4) {
-  width: 130px;
-}
-.support .inner .FAQ table tbody tr td:nth-of-type(1), .support .inner .QNA table tbody tr td:nth-of-type(1) {
-  width: 75px;
-}
-.support .inner .FAQ table tbody tr td:nth-of-type(2), .support .inner .QNA table tbody tr td:nth-of-type(2) {
-  width: 220px;
-}
-.support .inner .FAQ table tbody tr td:nth-of-type(3), .support .inner .QNA table tbody tr td:nth-of-type(3) {
-  width: 755px;
-  text-align: left;
-  font-weight: bold;
-  cursor: pointer;
-  padding-right: 10px;
-}
-.support .inner .FAQ table tbody tr td:nth-of-type(3):hover, .support .inner .QNA table tbody tr td:nth-of-type(3):hover {
-  text-decoration: underline;
-}
-.support .inner .FAQ table tbody tr td:nth-of-type(4), .support .inner .QNA table tbody tr td:nth-of-type(4) {
-  width: 130px;
-}
-.support .inner .QNA .title .icon {
-  height: 40px;
+.support .inner article .title i {
+  height: 20px;
+  width: 20px;
   position: absolute;
-  right: 0;
-  top: 40px;
-}
-.support .inner .QNA .title .icon i {
+  right: 20px;
+  top: 50%;
+  transform-origin: center center;
+  transform: translateY(-50%) rotate(90deg);
+  cursor: pointer;
   font-size: 20px;
-  cursor: pointer;
 }
-.support .inner .Announcement table thead tr th:nth-of-type(1) {
-  width: 75px;
+.support .inner article .title i.on {
+  transform: rotate(0);
 }
-.support .inner .Announcement table thead tr th:nth-of-type(2) {
-  width: 965px;
-  padding-right: 5px;
-  padding-left: 5px;
-}
-.support .inner .Announcement table thead tr th:nth-of-type(3) {
-  width: 130px;
-}
-.support .inner .Announcement table tbody tr td span {
-  background-color: #4d6ee4;
-  font-size: 14px;
-  color: #fff;
-  padding: 2px 8px;
-}
-.support .inner .Announcement table tbody tr td:nth-of-type(1) {
-  width: 75px;
-}
-.support .inner .Announcement table tbody tr td:nth-of-type(2) {
-  width: 965px;
-  text-align: left;
-  font-weight: bold;
-  cursor: pointer;
-  padding-right: 5px;
-  padding-left: 5px;
-}
-.support .inner .Announcement table tbody tr td:nth-of-type(2):hover {
-  text-decoration: underline;
-}
-.support .inner .Announcement table tbody tr td:nth-of-type(3) {
-  width: 130px;
-}
-.support .inner .numberClick {
+.support .inner article .text {
   width: 100%;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 10px;
+  background-color: #eee;
+  overflow-y: hidden;
+  padding: 20px;
+  display: none;
 }
-.support .inner .numberClick li {
-  width: 25px;
-  height: 25px;
-  display: flex;
-  color: #aaa;
-  border: 1px solid #444;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.support .inner .numberClick li.on {
-  background-color: #444;
-  color: #fff;
-}
-.support.on {
-  opacity: 1;
-  margin-top: 0;
-}
-
-@media screen and (max-width: 539px) {
-  .support {
-    height: 120vh;
-  }
-  .support .inner {
-    width: 100%;
-  }
-  .support .inner .menu {
-    width: 100%;
-    height: 30px;
-    display: flex;
-    margin-bottom: 80px;
-    align-items: center;
-  }
-  .support .inner .menu li {
-    width: 100%;
-    padding: 15px;
-    border: 1px;
-    text-align: center;
-    color: #444;
-    font: bold 15px/1 "arial";
-    cursor: pointer;
-  }
-  .support .inner .menu li.on {
-    background-color: #4d6ee4;
-    color: #fff;
-  }
-  .support .inner article {
-    width: 100%;
-  }
-  .support .inner article > .title {
-    justify-content: left;
-  }
-  .support .inner article > .title h3 {
-    font-size: 30px;
-    margin-left: 10px;
-  }
-  .support .inner .FAQ table, .support .inner .QNA table {
-    font-size: 3.5vw;
-  }
-  .support .inner .FAQ table thead tr th:nth-of-type(1), .support .inner .QNA table thead tr th:nth-of-type(1) {
-    width: 20%;
-    display: none;
-  }
-  .support .inner .FAQ table thead tr th:nth-of-type(2), .support .inner .QNA table thead tr th:nth-of-type(2) {
-    width: 220px;
-    display: none;
-  }
-  .support .inner .FAQ table thead tr th:nth-of-type(3), .support .inner .QNA table thead tr th:nth-of-type(3) {
-    width: 745px;
-    padding-right: 10px;
-  }
-  .support .inner .FAQ table thead tr th:nth-of-type(4), .support .inner .QNA table thead tr th:nth-of-type(4) {
-    width: 130px;
-  }
-  .support .inner .FAQ table tbody tr td:nth-of-type(1), .support .inner .QNA table tbody tr td:nth-of-type(1) {
-    display: none;
-  }
-  .support .inner .FAQ table tbody tr td:nth-of-type(2), .support .inner .QNA table tbody tr td:nth-of-type(2) {
-    width: 220px;
-    display: none;
-  }
-  .support .inner .FAQ table tbody tr td:nth-of-type(3), .support .inner .QNA table tbody tr td:nth-of-type(3) {
-    width: 755px;
-    text-align: left;
-    font-weight: bold;
-    cursor: pointer;
-    padding-right: 10px;
-  }
-  .support .inner .FAQ table tbody tr td:nth-of-type(3):hover, .support .inner .QNA table tbody tr td:nth-of-type(3):hover {
-    text-decoration: underline;
-  }
-  .support .inner .FAQ table tbody tr td:nth-of-type(4), .support .inner .QNA table tbody tr td:nth-of-type(4) {
-    width: 130px;
-  }
-  .support .inner .QNA .title .icon {
-    top: 20px;
-    right: 10px;
-  }
-  .support .inner .QNA .title .icon i {
-    font-size: 20px;
-    cursor: pointer;
-  }
-  .support .inner .Announcement table {
-    font-size: 3.5vw;
-  }
-  .support .inner .Announcement table thead tr th:nth-of-type(1) {
-    width: 75px;
-    display: none;
-  }
-  .support .inner .Announcement table thead tr th:nth-of-type(2) {
-    width: 965px;
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-  .support .inner .Announcement table thead tr th:nth-of-type(3) {
-    width: 130px;
-  }
-  .support .inner .Announcement table tbody tr td span {
-    background-color: #4d6ee4;
-    font-size: 14px;
-    color: #fff;
-    padding: 2px 8px;
-  }
-  .support .inner .Announcement table tbody tr td:nth-of-type(1) {
-    width: 75px;
-    display: none;
-  }
-  .support .inner .Announcement table tbody tr td:nth-of-type(2) {
-    width: 965px;
-    text-align: left;
-    font-weight: bold;
-    cursor: pointer;
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-  .support .inner .Announcement table tbody tr td:nth-of-type(2):hover {
-    text-decoration: underline;
-  }
-  .support .inner .Announcement table tbody tr td:nth-of-type(3) {
-    width: 130px;
-  }
-  .support .inner .numberClick {
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 10px;
-  }
-  .support .inner .numberClick li {
-    width: 25px;
-    height: 25px;
-    display: flex;
-    color: #aaa;
-    border: 1px solid #444;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  .support .inner .numberClick li.on {
-    background-color: #444;
-    color: #fff;
-  }
-  .support.on {
-    opacity: 1;
-    margin-top: 0;
-  }
+.support .inner article.on .text {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

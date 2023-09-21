@@ -346,13 +346,14 @@
         }
         aside{
             width: 100%;
-            height: 60vh;
+            height: 50%;
             display: flex;
             flex-direction: column;
     
             figure{
                 display: flex;
                 width: 100%;
+                height: 100%;
                 margin-left: 0;
                 padding: 20px;
                 img{
@@ -373,7 +374,7 @@
                     font: normal 8vw/1 "Rubik";
                 }
                 p{
-                    font: 4vw/1.3 "arial";
+                    font: 3.5vw/1.3 "arial";
                     margin-left: 0;
                     padding: 20px;
                     margin-bottom: 0;
