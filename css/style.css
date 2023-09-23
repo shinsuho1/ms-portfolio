@@ -2063,14 +2063,14 @@ footer .inner p {
 }
 .support .inner .menu {
   width: 100%;
-  height: 60px;
   display: flex;
   margin-bottom: 80px;
+  justify-content: center;
+  align-items: center;
 }
 .support .inner .menu li {
   width: 100%;
   padding: 20px;
-  border: 1px;
   text-align: center;
   color: #444;
   font: bold 20px/1 "arial";
@@ -2083,23 +2083,6 @@ footer .inner p {
 }
 .support .inner > article {
   display: none;
-}
-.support .inner > article > .title {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-.support .inner > article > .title h3 {
-  font: bold 40px "arial";
-  margin-bottom: 20px;
-}
-.support .inner > article > .title h3 span {
-  font: normal 20px/1 "맑은 고딕";
-  color: #aaa;
-}
-.support .inner > article > .title h3 span::before {
-  content: "/";
-  margin: 0 20px 0 10px;
 }
 .support .inner > article article {
   width: 100%;
@@ -2173,6 +2156,24 @@ footer .inner p {
   display: block;
 }
 
+@media screen and (max-width: 539px) {
+  .support {
+    width: 100%;
+  }
+  .support .inner {
+    width: 100%;
+  }
+  .support .inner .menu li {
+    padding: 1vh;
+    font: bold 3vw/1 "arial";
+  }
+  .support .inner > article article .title {
+    padding: 20px 10px 20px 0px;
+  }
+  .support .inner > article article .title h2 {
+    font: bold 4vw/1 "Montserrat";
+  }
+}
 .scrollUpBtn {
   position: fixed;
   bottom: 3vh;
