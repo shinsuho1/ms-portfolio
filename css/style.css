@@ -351,6 +351,7 @@ header.on .inner {
   top: 0;
   left: 0;
   z-index: 2;
+  text-wrap: nowrap;
 }
 .progream .inner div.title #title li {
   width: 400px;
@@ -358,7 +359,7 @@ header.on .inner {
   float: left;
 }
 .progream .inner div.title #title li h2 {
-  font: bold 30px "Pretendard-Regular";
+  font: bold 20px "Pretendard-Regular";
   color: #888;
   margin-bottom: 10px;
 }

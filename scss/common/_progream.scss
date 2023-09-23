@@ -26,12 +26,13 @@
                 top: 0;
                 left: 0;
                 z-index: 2;
+                text-wrap: nowrap;
                 li{
                     width: 400px;
                     height: 100%;
                     float: left;
                     h2{
-                        font: bold 30px "Pretendard-Regular";
+                        font: bold 20px "Pretendard-Regular";
                         color: #888;
                         margin-bottom: 10px;
                     }
