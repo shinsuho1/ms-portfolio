@@ -1381,17 +1381,18 @@ footer .inner p {
 .information .location .btns {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 .information .location .btns li {
-  width: 100%;
+  width: 20%;
 }
 .information .location .btns li a {
   display: block;
+  height: 30px;
   width: 100%;
-  height: 40px;
   background-color: #fff;
-  font: bold 12px/40px "맑은 고딕";
+  font: bold 12px/30px "맑은 고딕";
   color: #555;
   text-align: center;
   border: 1px solid #555;
@@ -1403,7 +1404,6 @@ footer .inner p {
 }
 .information .location .txt1 {
   width: 100%;
-  height: 50%;
   padding: 30px;
   position: relative;
   text-align: center;
@@ -1504,7 +1504,7 @@ footer .inner p {
   }
   .information aside {
     width: 100%;
-    height: 50vh;
+    height: 50%;
     display: flex;
     flex-direction: column;
   }
@@ -1521,7 +1521,6 @@ footer .inner p {
   }
   .information aside .txt {
     position: relative;
-    width: 100%;
   }
   .information aside .txt h1 {
     margin-top: 20px;
@@ -1541,7 +1540,7 @@ footer .inner p {
   }
   .information .location {
     width: 100%;
-    height: 60vh;
+    height: 50%;
   }
   .information .location figure {
     width: 100%;
@@ -1551,6 +1550,9 @@ footer .inner p {
   .information .location figure #map {
     width: 100%;
     height: 100%;
+  }
+  .information .location .btns li a {
+    font-size: 2vw;
   }
   .information .location .txt1 h1.office {
     font-size: 8vw;
@@ -2168,6 +2170,38 @@ footer .inner p {
 }
 .support .inner > article.on {
   display: block;
+}
+
+.scrollUpBtn {
+  position: fixed;
+  bottom: 3vh;
+  right: 2vw;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.3;
+}
+.scrollUpBtn i {
+  font-size: 30px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #444;
+  border: 1px solid #444;
+}
+.scrollUpBtn.on {
+  display: block;
+}
+
+@media screen and (max-width: 1179px) {
+  .scrollUpBtn {
+    right: 50%;
+    transform: translateX(50%);
+    opacity: 0.5;
+  }
+  .scrollUpBtn i {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
