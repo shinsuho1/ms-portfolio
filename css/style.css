@@ -1504,16 +1504,15 @@ footer .inner p {
   }
   .information aside {
     width: 100%;
-    height: 50%;
+    height: 50vh;
     display: flex;
     flex-direction: column;
   }
   .information aside figure {
     display: flex;
     width: 100%;
-    height: 100%;
     margin-left: 0;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
   }
   .information aside figure img {
     width: 100%;
@@ -1523,7 +1522,6 @@ footer .inner p {
   .information aside .txt {
     position: relative;
     width: 100%;
-    height: 100%;
   }
   .information aside .txt h1 {
     margin-top: 20px;
@@ -1569,7 +1567,7 @@ footer .inner p {
 }
 .news {
   width: 1180px;
-  padding: 100px 0;
+  padding: 100px 0 300px 0;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -1642,12 +1640,10 @@ footer .inner p {
 }
 .news .inner {
   width: 800px;
-  height: 1000px;
   position: relative;
 }
 .news .inner article {
   width: 100%;
-  height: 100%;
   position: absolute;
   top: 50px;
   right: 0;
@@ -1706,7 +1702,6 @@ footer .inner p {
 @media screen and (max-width: 539px) {
   .news {
     width: 100%;
-    height: 100%;
     padding: 3vh 0 5vh 0;
   }
   .news h1 {
@@ -1718,7 +1713,6 @@ footer .inner p {
   }
   .news .inner {
     width: 100%;
-    height: 100%;
     margin-top: 50px;
   }
   .news .inner::before {
@@ -1727,7 +1721,6 @@ footer .inner p {
     clear: both;
   }
   .news .inner article {
-    height: 100%;
     position: relative;
     opacity: 1;
     display: block;
@@ -1968,7 +1961,6 @@ footer .inner p {
 @media screen and (max-width: 539px) {
   .download {
     width: 100%;
-    height: 100vh;
     padding-bottom: 0;
   }
   .download .img {
@@ -2027,13 +2019,11 @@ footer .inner p {
     margin-bottom: 30px;
   }
   .type {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
   }
   .type h2 {
     width: 90vw;
@@ -2042,8 +2032,7 @@ footer .inner p {
     transform: translateY(0%);
   }
   .type .btn {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
     display: block;
     opacity: 1;
     text-align: center;
@@ -2063,12 +2052,9 @@ footer .inner p {
   padding: 100px 0;
   display: flex;
   flex-direction: column;
-  opacity: 1;
-  margin-top: 80px;
-  transition: 1s;
 }
 .support .inner {
-  width: 980px;
+  width: 1180px;
   margin: 0 auto;
   position: relative;
 }
@@ -2086,54 +2072,101 @@ footer .inner p {
   color: #444;
   font: bold 20px/1 "arial";
   cursor: pointer;
+  background-color: #ddd;
 }
 .support .inner .menu li.on {
   background-color: #4d6ee4;
   color: #fff;
 }
-.support .inner article {
-  width: 100%;
-  height: 100px;
-  border-bottom: 1px solid #eee;
+.support .inner > article {
+  display: none;
 }
-.support .inner article .title {
-  height: 100%;
+.support .inner > article > .title {
   position: relative;
-  padding: 20px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
-.support .inner article .title h2 {
-  font: bold 20px/1 "Montserrat";
+.support .inner > article > .title h3 {
+  font: bold 40px "arial";
+  margin-bottom: 20px;
 }
-.support .inner article .title p {
+.support .inner > article > .title h3 span {
+  font: normal 20px/1 "맑은 고딕";
+  color: #aaa;
+}
+.support .inner > article > .title h3 span::before {
+  content: "/";
+  margin: 0 20px 0 10px;
+}
+.support .inner > article article {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+.support .inner > article article .title {
+  height: 100%;
+  position: relative;
+  padding: 20px 20px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.support .inner > article article .title h2 {
+  font: bold 25px/1 "Montserrat";
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.support .inner > article article .title .text {
+  width: 100%;
+  background-color: #eee;
+  display: none;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  padding: 20px;
+}
+.support .inner > article article .title .text h3 {
+  display: flex;
+  gap: 10px;
+  color: green;
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.support .inner > article article .title .text h3 i {
+  font-size: 18px;
+}
+.support .inner > article article .title .text h4 {
+  font: bold 20px/1 "arial";
+  padding: 20px 0px 10px 0px;
+}
+.support .inner > article article .title .text p {
+  font: 16px/1.5 "arial";
+  margin-bottom: 10px;
+}
+.support .inner > article article .title .text p a {
+  color: #0067b8;
+  text-decoration: underline;
+}
+.support .inner > article article .title .text p.answer {
+  padding-left: 28px;
+  line-height: 1.4;
+  color: green;
+}
+.support .inner > article article .title .text p:last-child {
+  margin-bottom: 0;
+}
+.support .inner > article article .title .text.on {
+  display: block;
+}
+.support .inner > article article .title > p {
   display: flex;
   justify-content: space-between;
   font: 12px/1 "Montserrat";
+  margin-top: 10px;
+  gap: 20px;
+  padding-left: 10px;
 }
-.support .inner article .title i {
-  height: 20px;
-  width: 20px;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform-origin: center center;
-  transform: translateY(-50%) rotate(90deg);
-  cursor: pointer;
-  font-size: 20px;
-}
-.support .inner article .title i.on {
-  transform: rotate(0);
-}
-.support .inner article .text {
-  width: 100%;
-  background-color: #eee;
-  overflow-y: hidden;
-  padding: 20px;
-  display: none;
-}
-.support .inner article.on .text {
+.support .inner > article.on {
   display: block;
 }
 

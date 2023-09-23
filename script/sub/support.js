@@ -1,6 +1,6 @@
 const support_menus = document.querySelectorAll(".menu>li");
-const support_articles = document.querySelectorAll("article");
-const numberClick = document.querySelectorAll(".numberClick>li");
+const support_articles = document.querySelectorAll(".inner>article");
+
 
 
 support_menus.forEach((el,index)=>{
@@ -11,31 +11,25 @@ support_menus.forEach((el,index)=>{
         }
         support_menus[index].classList.add("on");
         support_articles[index].classList.add("on");
-        support_articles[index].querySelector(".start").classList.add("on");
+
     });
 });
 
-const support = document.querySelector(".support");
+let support_title = document.querySelectorAll(".title h2");
+let support_text = document.querySelectorAll(".text");
 
-setTimeout(() => {
-    support.classList.add("on");
-}, 700);
-
-numberClick.forEach((el,index)=>{
+support_title.forEach((el,index)=>{
     el.addEventListener("click",()=>{
-        for(let i = 0 ; i<numberClick.length ; i++){
-            numberClick[i].classList.remove("on");
+        if(support_text[index].classList.contains("on")){
+            support_text[index].classList.remove("on");
         }
-        numberClick[index].classList.add("on");
+        else{
+            support_text[index].classList.add("on");
+        }
     });
 });
 
 
-// window.addEventListener("load",()=>{
-//     if(window.innerWidth < 539){
-        
-//     }
-// });
 
 
 
@@ -45,36 +39,3 @@ numberClick.forEach((el,index)=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// window.addEventListener("load",()=>{
-//     let support_style = parseFloat(getComputedStyle(support).width);
-//     let support_date = document.querySelectorAll(".date");
-//     let support_title = document.querySelectorAll("td.title");
-//     if(support_style <= 600){
-//         support_date.forEach((el,index)=>{
-//             let Values = support_date[index].innerText;
-//             Values_month = Values.split("-")[1]
-//             Values_day = Values.split("-")[2]
-//             support_date[index].innerText = `${Values_month}-${Values_day}`;
-//         });
-//         support_title .forEach((el,index)=>{
-//             let titles = support_title[index].innerText;
-//             let cut_titles = titles.substr(0,45);
-//             support_title[index].innerText = cut_titles;
-//         });
-//     }
-// });

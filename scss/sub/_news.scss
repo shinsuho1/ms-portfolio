@@ -1,6 +1,6 @@
 .news{
     width: 1180px;
-    padding: 100px 0;
+    padding: 100px 0 300px 0;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -77,12 +77,10 @@
     }
     .inner{
         width: 800px;
-        height: 1000px;
         position: relative;
         
         article{
             width: 100%;
-            height: 100%;
             position: absolute;
             top: 50px;
             right: 0;
@@ -145,7 +143,6 @@
 @media screen and (max-width: 539px){
     .news{
         width: 100%;
-        height: 100%;
         padding: 3vh 0 5vh 0;
         h1{
             margin-left: 20px;
@@ -156,7 +153,6 @@
         }
         .inner{
             width: 100%;
-            height: 100%;
             margin-top: 50px;
             &::before{
                 content: '';
@@ -164,7 +160,6 @@
                 clear: both;
             }
             article{
-                height: 100%;
                 position: relative;
                 opacity: 1;
                 display: block;
