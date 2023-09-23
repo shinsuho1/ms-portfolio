@@ -168,11 +168,11 @@
 }
 .type{
     width: 100%;
-    height: 200px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 30px;
     h2{
         font: 24px/1 "Rubik";
         text-align: center;
@@ -183,12 +183,12 @@
     }
     .btn{
         width: 1180px;
-        height: 60px;
         margin-top: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
+        margin-top: 10px;
         a{
             width: 240px;
             height: 38px;
@@ -282,6 +282,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 2vh;
         h2{
             width: 90vw;
             font: 3.2vw/1 "Rubik";
