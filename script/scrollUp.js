@@ -3,8 +3,6 @@ let scrollUpBtn = document.createElement("div");
 scrollUpBtn.classList.add("scrollUpBtn");
 scrollUpBtn.innerHTML = `<i class="fa-solid fa-chevron-up"></i>`
 
-console.log(scrollUpBtn);
-
 document.body.append(scrollUpBtn);
 
 scrollUpBtn.addEventListener("click",()=>{

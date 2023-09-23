@@ -18,7 +18,7 @@ function setPos(){
 window.addEventListener("scroll",()=>{
     let scroll = window.scrollY;
     section_arr.map((el,index)=>{
-        if(scroll >= posArr[index]-400){
+        if(scroll >= posArr[index]-700){
             section_arr[index].classList.add("active");
         }
         if(scroll >= 1270){
