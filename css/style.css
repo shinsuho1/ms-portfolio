@@ -647,7 +647,6 @@ section.data_page {
 section.data_page .inner {
   position: relative;
   width: 1180px;
-  height: 900px;
   margin: 0 auto;
   display: flex;
 }
@@ -658,14 +657,11 @@ section.data_page .inner::before {
 }
 section.data_page .inner .left_side {
   width: 560px;
-  height: 560px;
   float: left;
   margin-right: 20px;
 }
 section.data_page .inner .left_side .main_text {
   width: 100%;
-  height: 200px;
-  margin-bottom: 40px;
 }
 section.data_page .inner .left_side .main_text h1 {
   margin: 50px;
@@ -677,7 +673,6 @@ section.data_page .inner .left_side .main_text p {
 }
 section.data_page .inner .left_side .sub_text {
   width: 100%;
-  height: 200px;
 }
 section.data_page .inner .left_side .sub_text .table {
   margin-top: 20px;
@@ -832,11 +827,9 @@ section.data_page.on .inner .right_side .pic .right {
   }
   section.data_page .inner .left_side {
     width: 100%;
-    height: 100%;
   }
   section.data_page .inner .left_side .main_text {
     width: 100%;
-    height: 200px;
     margin-bottom: 5vw;
   }
   section.data_page .inner .left_side .main_text h1 {
@@ -855,7 +848,6 @@ section.data_page.on .inner .right_side .pic .right {
   }
   section.data_page .inner .right_side {
     width: 100%;
-    height: 100%;
     margin: 0 auto;
   }
   section.data_page .inner .right_side .pic .left, section.data_page .inner .right_side .pic .right {
@@ -893,7 +885,6 @@ section.data_page.on .inner .right_side .pic .right {
     margin-bottom: 20px;
   }
   section.data_page .inner .right_side .pic .right article .name {
-    margin-top: 30px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -912,8 +903,9 @@ section.data_page.on .inner .right_side .pic .right {
     font-weight: bold;
   }
   section.data_page .inner .right_side .pic .right article:nth-of-type(2) {
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+    transform: translateY(-25px);
   }
   section.data_page.on .inner .right_side .pic .left, section.data_page.on .inner .right_side .pic .right {
     margin: 0;
