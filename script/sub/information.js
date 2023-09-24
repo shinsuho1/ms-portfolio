@@ -40,19 +40,23 @@ for(let el of article_arr){
         aside.querySelector("p").innerText = txt;
         aside.querySelector("img").setAttribute("src", imgSrc);
         aside.classList.add("on");
+        document.body.classList.add("stop-scrolling");
     });
 }
 
 address.addEventListener("click",(e)=>{
     location_aside.classList.add("on");
+    document.body.classList.add("stop-scrolling");
 });
 
 close.addEventListener("click", () => {
     aside.classList.remove("on");
+    document.body.classList.remove("stop-scrolling");
 })
 
 location_close.addEventListener("click", () => {
     location_aside.classList.remove("on");
+    document.body.classList.remove("stop-scrolling");
 })
 
 

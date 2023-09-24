@@ -19,11 +19,12 @@ openBtn.addEventListener("click",(e)=>{
             <span class="btnClose"><img src="./img/close.png" alt=""></span>
         `
         vidList.append(pop);
-    
+        document.body.classList.add("stop-scrolling");
 });
 
 vidList.addEventListener("click",(e)=>{
     const pop = vidList.querySelector(".pop");
+    document.body.classList.remove("stop-scrolling");
     if(pop){
         const close = pop.querySelector("span>img");
         if(e.target == close) {
