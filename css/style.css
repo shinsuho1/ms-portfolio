@@ -270,6 +270,7 @@ header.on .inner {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 }
 .main .pop .btnClose {
   position: absolute;
@@ -2068,7 +2069,7 @@ footer .inner p {
   color: #444;
   font: bold 20px/1 "arial";
   cursor: pointer;
-  background-color: #ddd;
+  background-color: #f4f4f4;
 }
 .support .inner .menu li.on {
   background-color: #4d6ee4;
@@ -2097,10 +2098,8 @@ footer .inner p {
 }
 .support .inner > article article .title .text {
   width: 100%;
-  background-color: #eee;
+  background-color: #f4f4f4;
   display: none;
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
   padding: 20px;
 }
 .support .inner > article article .title .text h3 {

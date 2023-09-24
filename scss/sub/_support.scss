@@ -21,7 +21,7 @@
                 color: #444;
                 font: bold 20px/1 "arial";
                 cursor: pointer;
-                background-color: #ddd;
+                background-color: #f4f4f4;
 
                 &.on{
                     background-color: #4d6ee4;
@@ -50,10 +50,10 @@
                     }
                     .text{
                         width: 100%;
-                        background-color: #eee;
+                        background-color: #f4f4f4;
                         display: none;
-                        border-top: 1px solid #aaa;
-                        border-bottom: 1px solid #aaa;
+                        // border-top: 1px solid #aaa;
+                        // border-bottom: 1px solid #aaa;
                         padding: 20px;
                         h3{
                             i{
