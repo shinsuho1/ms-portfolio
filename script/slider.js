@@ -4,6 +4,8 @@ const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 let enableClick = true;
 
+
+
 const icons = document.querySelectorAll(".icons>a");
 const icons_arr = Array.from(icons);
 const icon_p = document.querySelectorAll(".icons>p");

@@ -344,6 +344,7 @@ header.on .inner {
   height: 100px;
   position: absolute;
   overflow: hidden;
+  margin-top: 30px;
 }
 .progream .inner div.title #title {
   width: 600%;
@@ -353,6 +354,7 @@ header.on .inner {
   left: 0;
   z-index: 2;
   text-wrap: nowrap;
+  text-align: justify;
 }
 .progream .inner div.title #title li {
   width: 400px;
