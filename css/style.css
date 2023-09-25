@@ -2091,10 +2091,16 @@ footer .inner p {
   justify-content: space-around;
 }
 .support .inner > article article .title h2 {
-  font: bold 25px/1 "Montserrat";
+  font: bold 25px/1 "Rubik";
   cursor: pointer;
   margin-bottom: 10px;
   padding-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.support .inner > article article .title h2.on {
+  white-space: wrap;
 }
 .support .inner > article article .title .text {
   width: 100%;
@@ -2139,7 +2145,7 @@ footer .inner p {
 .support .inner > article article .title > p {
   display: flex;
   justify-content: space-between;
-  font: 12px/1 "Montserrat";
+  font: 13px/1 "Montserrat";
   margin-top: 10px;
   gap: 20px;
   padding-left: 10px;
@@ -2163,7 +2169,7 @@ footer .inner p {
     padding: 20px 10px 20px 0px;
   }
   .support .inner > article article .title h2 {
-    font: bold 4vw/1 "Montserrat";
+    font: bold 4vw/1 "Rubik";
   }
 }
 .scrollUpBtn {

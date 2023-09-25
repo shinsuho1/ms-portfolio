@@ -43,10 +43,18 @@
                     flex-direction: column;
                     justify-content: space-around;
                     h2{
-                        font: bold 25px/1 "Montserrat";
+                        font: bold 25px/1 "Rubik";
                         cursor: pointer;
                         margin-bottom: 10px;
                         padding-left: 10px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        &.on{
+                            // overflow: hidden;
+                            // text-overflow: ellipsis;
+                            white-space: wrap;
+                        }
                     }
                     .text{
                         width: 100%;
@@ -97,7 +105,7 @@
                         display: flex;
 
                         justify-content: space-between;
-                        font: 12px/1 "Montserrat";
+                        font: 13px/1 "Montserrat";
                         margin-top: 10px;
                         gap: 20px;
                         padding-left: 10px;
@@ -128,7 +136,7 @@
                     .title{
                         padding: 20px 10px 20px 0px;
                         h2{
-                            font: bold 4vw/1 "Montserrat";
+                            font: bold 4vw/1 "Rubik";
                         }
                     }
     
