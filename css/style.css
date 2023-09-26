@@ -2087,12 +2087,17 @@ footer .inner p {
 .support .inner > article article .title {
   height: 100%;
   position: relative;
-  padding: 20px 20px 20px 0px;
+  padding: 20px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  transition: 0.3s;
+}
+.support .inner > article article .title:hover {
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.1);
 }
 .support .inner > article article .title h2 {
+  width: 80%;
   font: bold 25px/1 "Rubik";
   cursor: pointer;
   margin-bottom: 10px;
@@ -2106,8 +2111,10 @@ footer .inner p {
 }
 .support .inner > article article .title .text {
   width: 100%;
-  background-color: #f4f4f4;
+  background-color: #fff;
   display: none;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   padding: 20px;
 }
 .support .inner > article article .title .text h3 {

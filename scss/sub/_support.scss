@@ -1,20 +1,19 @@
-
-.support{
+.support {
     width: 100%;
     padding: 100px 0;
     display: flex;
     flex-direction: column;
-    .inner{
+    .inner {
         width: 1180px;
         margin: 0 auto;
         position: relative;
-        .menu{
+        .menu {
             width: 100%;
             display: flex;
             margin-bottom: 80px;
             justify-content: center;
             align-items: center;
-            li{
+            li {
                 width: 100%;
                 padding: 20px;
                 text-align: center;
@@ -23,26 +22,31 @@
                 cursor: pointer;
                 background-color: #f4f4f4;
 
-                &.on{
+                &.on {
                     background-color: #4d6ee4;
                     color: #fff;
-                }           
+                }
             }
         }
 
-        >article{
+        > article {
             display: none;
-            article{
+            article {
                 width: 100%;
                 border-bottom: 1px solid #ddd;
-                .title{
+                .title {
                     height: 100%;
                     position: relative;
-                    padding: 20px 20px 20px 0px;
+                    padding: 20px 20px 20px 20px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
-                    h2{
+                    transition: 0.3s;
+                    &:hover {
+                        box-shadow: 0 0 15px 3px rgba(0 0 0 / 10%);
+                    }
+                    h2 {
+                        width: 80%;
                         font: bold 25px/1 "Rubik";
                         cursor: pointer;
                         margin-bottom: 10px;
@@ -50,21 +54,21 @@
                         overflow: hidden;
                         text-overflow: ellipsis;
                         white-space: nowrap;
-                        &.on{
+                        &.on {
                             // overflow: hidden;
                             // text-overflow: ellipsis;
                             white-space: wrap;
                         }
                     }
-                    .text{
+                    .text {
                         width: 100%;
-                        background-color: #f4f4f4;
+                        background-color: #fff;
                         display: none;
-                        // border-top: 1px solid #aaa;
-                        // border-bottom: 1px solid #aaa;
+                        border-top: 1px solid #eee;
+                        border-bottom: 1px solid #eee;
                         padding: 20px;
-                        h3{
-                            i{
+                        h3 {
+                            i {
                                 font-size: 18px;
                             }
                             display: flex;
@@ -74,34 +78,32 @@
                             font-weight: bold;
                             margin-top: 20px;
                         }
-                        h4{
+                        h4 {
                             font: bold 20px/1 "arial";
-                            padding: 20px 0px 10px 0px
+                            padding: 20px 0px 10px 0px;
                         }
-                        p{
+                        p {
                             font: 16px/1.5 "arial";
                             margin-bottom: 10px;
-                            a{
+                            a {
                                 color: #0067b8;
                                 text-decoration: underline;
                             }
-                            &.answer{
-                                
+                            &.answer {
                                 padding-left: 28px;
                                 line-height: 1.4;
                                 color: green;
                             }
-                            &:last-child{
+                            &:last-child {
                                 margin-bottom: 0;
                             }
                         }
-                        
-                        &.on{
+
+                        &.on {
                             display: block;
                         }
-                        
                     }
-                    >p{
+                    > p {
                         display: flex;
 
                         justify-content: space-between;
@@ -111,35 +113,33 @@
                         padding-left: 10px;
                     }
                 }
-
             }
-            &.on{
+            &.on {
                 display: block;
             }
         }
     }
 }
 
-@media screen and (max-width: 539px){
-    .support{
+@media screen and (max-width: 539px) {
+    .support {
         width: 100%;
-        .inner{
+        .inner {
             width: 100%;
-            .menu{
-                li{
+            .menu {
+                li {
                     padding: 1vh;
                     font: bold 3vw/1 "arial";
                 }
             }
-            >article{
-                article{
-                    .title{
+            > article {
+                article {
+                    .title {
                         padding: 20px 10px 20px 0px;
-                        h2{
+                        h2 {
                             font: bold 4vw/1 "Rubik";
                         }
                     }
-    
                 }
             }
         }
