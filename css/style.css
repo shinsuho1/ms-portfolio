@@ -2092,6 +2092,7 @@ footer .inner p {
   flex-direction: column;
   justify-content: space-around;
   transition: 0.3s;
+  cursor: pointer;
 }
 .support .inner > article article .title:hover {
   box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.1);
@@ -2099,7 +2100,6 @@ footer .inner p {
 .support .inner > article article .title h2 {
   width: 80%;
   font: bold 25px/1 "Rubik";
-  cursor: pointer;
   margin-bottom: 10px;
   padding-left: 10px;
   overflow: hidden;
