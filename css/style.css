@@ -2103,6 +2103,7 @@ footer .inner p {
   white-space: nowrap;
 }
 .support .inner > article article .title h2.on {
+  width: 100%;
   white-space: wrap;
 }
 .support .inner > article article .title .text {
