@@ -280,7 +280,7 @@ header.on .inner {
   cursor: pointer;
 }
 
-@media screen and (max-width: 539px) {
+@media screen and (max-width: 1179px) {
   .main {
     height: 90vh;
   }
@@ -313,6 +313,14 @@ header.on .inner {
   .main .square {
     display: none;
   }
+  .main .pop {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+@media screen and (max-width: 539px) {
   .main .pop {
     width: 90%;
     height: 40%;
