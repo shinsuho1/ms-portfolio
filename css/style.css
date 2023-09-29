@@ -289,12 +289,12 @@ header.on .inner {
     text-align: center;
   }
   .main .title h1 {
-    font-size: 5vw;
+    font-size: 4vw;
     margin-bottom: 4vw;
   }
   .main .title h2 {
     text-align: left;
-    margin-left: 4vw;
+    text-align: center;
   }
   .main .title p {
     display: none;
@@ -321,6 +321,9 @@ header.on .inner {
   }
 }
 @media screen and (max-width: 539px) {
+  .main .title h1 {
+    font-size: 5vw;
+  }
   .main .pop {
     width: 90%;
     height: 40%;

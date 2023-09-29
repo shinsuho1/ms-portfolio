@@ -130,12 +130,12 @@
             width: 100%;
             text-align: center;
                 h1{
-                    font-size: 5vw;
+                    font-size: 4vw;
                     margin-bottom: 4vw;
                 }
                 h2{
                     text-align: left;
-                    margin-left: 4vw;
+                    text-align: center;
                 }
                 p{
                     display: none;
@@ -166,6 +166,11 @@
 
 @media screen and (max-width: 539px) {
     .main{
+        .title{
+            h1{
+                font-size: 5vw;
+            }
+        }
         .pop{
             width: 90%;
             height: 40%;
