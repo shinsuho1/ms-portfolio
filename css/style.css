@@ -1102,7 +1102,8 @@ section.data_page.on .inner .right_side .pic .right {
     font: bold 4vw/1 "Montserrat";
   }
   .introduction .inner p {
-    font: 1.7vw/1 "arial";
+    font: 2vw/1 "arial";
+    padding: 0px 2vw 0px 2vw;
   }
   .introduction .inner .wrap {
     width: 100%;
