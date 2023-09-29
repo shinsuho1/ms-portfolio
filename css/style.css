@@ -645,7 +645,6 @@ header.on .inner {
 }
 section.data_page {
   width: 100%;
-  height: 100vh;
   padding: 150px 0;
 }
 section.data_page .inner {
@@ -822,7 +821,6 @@ section.data_page.on .inner .right_side .pic .right {
 @media screen and (max-width: 539px) {
   section.data_page {
     width: 100%;
-    height: 150vh;
     padding: 100px 0;
   }
   section.data_page .inner {
