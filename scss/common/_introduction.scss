@@ -1,6 +1,5 @@
 .introduction{
     width: 100%;
-    height: 100vh;
     padding: 200px 0;
     .inner{
         width: 1180px;
@@ -131,44 +130,47 @@
     }
 }
 
-@media screen and (max-width: 539px){
+@media screen and (max-width: 1179px){
     .introduction{
-        width: 100%;
-        height: 200vh;
         padding: 10vh 0;
         .inner{
             width: 100%;
             h1{
-                font: bold 5vw/1 "Montserrat";
+                font: bold 3vw/1 "Montserrat";
                 margin-bottom: 3vh;
             }
             p{
-                font: 3vw/1 "arial";
+                font: 1.3vw/1 "arial";
                 margin-bottom: 5vw;
             }
 
             .wrap{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                article{
-                    width: 80vw;
-                    height: 30vh;
-                    transition: 1s;
-                    margin-right: 0;
+                width: 780px;
+                margin: 0 auto;
+                height: 100%;
+                    article{
+                        width: 380px;
                     h2{
-                        font-size: 5vw;
                         margin-top: 3vh;
                     }
                     span{
-                        width: 30vw;
-                        padding: 2%;   
                         border-radius: 20vw;
-                        font-size: 3vw;
+
                         i{
                             display: none;
                         }
+                    }
+                    &:nth-of-type(2){
+                        margin-right: 0;
+                    }
+                    &:nth-of-type(3){
+                        margin-right: 20px;
+                    }
+                    &:nth-of-type(4){
+                        margin-right: 0;
+                    }
+                    &:nth-of-type(6){
+                        margin-right: 0px;
                     }
                 
 
@@ -183,6 +185,75 @@
                         h2,span{
                             opacity: 1;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 799px){
+    .introduction{
+        .inner{
+            h1{
+                font: bold 4vw/1 "Montserrat";
+            }
+            p{
+                font: 1.7vw/1 "arial";
+            }
+
+            .wrap{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: none;
+                    article{
+                        width: 80%;
+                        height: 45vh;
+
+                        @for $i from 1 through 5 {
+                            &:nth-of-type(#{$i}){
+                                margin-right: 0;
+                            }
+                        }
+                    
+                        &.click{
+                            background-color: #282c37;
+                            .pic{
+                                img{
+                                    opacity: 0;
+                                    transform: scale(1.2);
+                                }
+                            }
+                            h2,span{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+@media screen and (max-width: 539px){
+    .introduction{
+        .inner{
+            h1{
+                font: bold 5vw/1 "Montserrat";
+            }
+            p{
+                font: 3vw/1 "arial";
+            }
+
+            .wrap{
+                article{
+                    width: 90%;
+                    height: 35vh;
+                    h2{
+                        font-size: 4vw;
+                        padding: 1vw;
                     }
                 }
             }

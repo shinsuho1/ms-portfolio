@@ -923,7 +923,6 @@ section.data_page.on .inner .right_side .pic .right {
 }
 .introduction {
   width: 100%;
-  height: 100vh;
   padding: 200px 0;
 }
 .introduction .inner {
@@ -1040,47 +1039,49 @@ section.data_page.on .inner .right_side .pic .right {
   transform: scale(1);
 }
 
-@media screen and (max-width: 539px) {
+@media screen and (max-width: 1179px) {
   .introduction {
-    width: 100%;
-    height: 200vh;
     padding: 10vh 0;
   }
   .introduction .inner {
     width: 100%;
   }
   .introduction .inner h1 {
-    font: bold 5vw/1 "Montserrat";
+    font: bold 3vw/1 "Montserrat";
     margin-bottom: 3vh;
   }
   .introduction .inner p {
-    font: 3vw/1 "arial";
+    font: 1.3vw/1 "arial";
     margin-bottom: 5vw;
   }
   .introduction .inner .wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 780px;
+    margin: 0 auto;
+    height: 100%;
   }
   .introduction .inner .wrap article {
-    width: 80vw;
-    height: 30vh;
-    transition: 1s;
-    margin-right: 0;
+    width: 380px;
   }
   .introduction .inner .wrap article h2 {
-    font-size: 5vw;
     margin-top: 3vh;
   }
   .introduction .inner .wrap article span {
-    width: 30vw;
-    padding: 2%;
     border-radius: 20vw;
-    font-size: 3vw;
   }
   .introduction .inner .wrap article span i {
     display: none;
+  }
+  .introduction .inner .wrap article:nth-of-type(2) {
+    margin-right: 0;
+  }
+  .introduction .inner .wrap article:nth-of-type(3) {
+    margin-right: 20px;
+  }
+  .introduction .inner .wrap article:nth-of-type(4) {
+    margin-right: 0;
+  }
+  .introduction .inner .wrap article:nth-of-type(6) {
+    margin-right: 0px;
   }
   .introduction .inner .wrap article.click {
     background-color: #282c37;
@@ -1091,6 +1092,67 @@ section.data_page.on .inner .right_side .pic .right {
   }
   .introduction .inner .wrap article.click h2, .introduction .inner .wrap article.click span {
     opacity: 1;
+  }
+}
+@media screen and (max-width: 799px) {
+  .introduction .inner h1 {
+    font: bold 4vw/1 "Montserrat";
+  }
+  .introduction .inner p {
+    font: 1.7vw/1 "arial";
+  }
+  .introduction .inner .wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: none;
+  }
+  .introduction .inner .wrap article {
+    width: 80%;
+    height: 45vh;
+  }
+  .introduction .inner .wrap article:nth-of-type(1) {
+    margin-right: 0;
+  }
+  .introduction .inner .wrap article:nth-of-type(2) {
+    margin-right: 0;
+  }
+  .introduction .inner .wrap article:nth-of-type(3) {
+    margin-right: 0;
+  }
+  .introduction .inner .wrap article:nth-of-type(4) {
+    margin-right: 0;
+  }
+  .introduction .inner .wrap article:nth-of-type(5) {
+    margin-right: 0;
+  }
+  .introduction .inner .wrap article.click {
+    background-color: #282c37;
+  }
+  .introduction .inner .wrap article.click .pic img {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  .introduction .inner .wrap article.click h2, .introduction .inner .wrap article.click span {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 539px) {
+  .introduction .inner h1 {
+    font: bold 5vw/1 "Montserrat";
+  }
+  .introduction .inner p {
+    font: 3vw/1 "arial";
+  }
+  .introduction .inner .wrap article {
+    width: 90%;
+    height: 35vh;
+  }
+  .introduction .inner .wrap article h2 {
+    font-size: 4vw;
+    padding: 1vw;
   }
 }
 footer {
