@@ -22,20 +22,20 @@ setInterval(() => {
 
 
 setPos()
-function setPos(){
-    for(let el of article_arr){
+function setPos() {
+    for (let el of article_arr) {
         posArr.push(el.offsetTop);
     }
 }
 
-for(let el of article_arr){
-    article_arr.splice(2,1);
-    el.addEventListener("click",(e)=>{
+for (let el of article_arr) {
+    article_arr.splice(2, 1);
+    el.addEventListener("click", (e) => {
         let tit = e.currentTarget.querySelector("h2").innerText;
         let txt = e.currentTarget.querySelector("p").innerText;
         let img = e.currentTarget.querySelector("img").getAttribute("src");
-        let imgSrc = img.replace("article_1","article_2");
-        
+        let imgSrc = img.replace("article_1", "article_2");
+
         aside.querySelector("h1").innerText = tit;
         aside.querySelector("p").innerText = txt;
         aside.querySelector("img").setAttribute("src", imgSrc);
@@ -44,7 +44,7 @@ for(let el of article_arr){
     });
 }
 
-address.addEventListener("click",(e)=>{
+address.addEventListener("click", (e) => {
     location_aside.classList.add("on");
     document.body.classList.add("stop-scrolling");
 });

@@ -8,39 +8,41 @@ setTimeout(() => {
     main_section.classList.add("on");
 }, 700);
 
+
 setPos();
-console.log(posArr);
-function setPos() {
-    for (let el of section_arr) {
-        posArr.push(el.offsetTop);
+
+function setPos(){
+    for(let el of section_arr){
+        posArr.push(el.offsetTop)
     }
 }
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll",()=>{
     let scroll = window.scrollY;
-    section_arr.map((el, index) => {
-        if (scroll >= posArr[index] - 400) {
+    section_arr.map((el,index)=>{
+        if(scroll >= posArr[index]-400){
             section_arr[index].classList.add("on");
         }
     });
-    if (eventOnce && scroll >= posArr[2] + 600) {
+    if(eventOnce && scroll >= posArr[2] + 600){
         eventOnce = false;
         const data_lable = document.querySelectorAll(".table");
-        data_lable.forEach((el, index) => {
+        data_lable.forEach((el,index)=>{
             let numElement = el.querySelector(".num");
             let num = parseFloat(numElement.innerText);
-
+            
             let count = 0;
             let time = 3000 / num;
-
-            let interval = setInterval(() => {
-                if (count == num) {
+            
+            let interval = setInterval(()=>{
+                if(count == num){
                     clearInterval(interval);
-                } else {
+                }else{
                     count++;
                     numElement.innerText = count + "%";
                 }
-            }, time);
+            },time);
         });
+
     }
 });

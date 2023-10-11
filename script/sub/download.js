@@ -8,20 +8,20 @@ setTimeout(() => {
     download.classList.add("active");
 }, 300);
 
-setPos();
-function setPos() {
-    for (let el of section_arr) {
+setPos()
+function setPos(){
+    for(let el of section_arr){
         posArr.push(el.offsetTop);
     }
 }
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll",()=>{
     let scroll = window.scrollY;
-    section_arr.map((el, index) => {
-        if (scroll >= posArr[index] - 700) {
+    section_arr.map((el,index)=>{
+        if(scroll >= posArr[index]-700){
             section_arr[index].classList.add("active");
         }
-        if (scroll >= 1270) {
+        if(scroll >= 1270){
             section_arr[2].classList.add("active");
         }
     });
